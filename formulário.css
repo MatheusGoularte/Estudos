@@ -63,3 +63,4 @@ fieldset.grupo .campo {
     margin-right: 1em;
 }
 
+.campo input[type="text"], .campo input[type="email"], .campo select, 
