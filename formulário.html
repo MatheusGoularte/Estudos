@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,8 +28,47 @@
                 <label for="nome"><strong>Nome</strong></label>
                 <input type="text" name="nome" id="nome" required>
             </div>
-            
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
         </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div class="campo">
+            <label><strong>Para qual vaga você é candidato</strong></label>
+            <label>
+                <input type="checkbox" name="estagio" value="estagio" checked>Estágio
+            </label>
+            <label>
+                <input type="checkbox" name="integral" value="integral">Turno Integral
+            </label>
+            <label>
+                <input type="checkbox" name="meio" value="meio">Meio Turno
+            </label>
+        </div>
+        <br>
+        <div class="campo">
+            <label for="escolaridade"><strong>Escolaridade</strong></label>
+            <select id="escolaridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Ensino Médio Completo</option>
+                <option>Ensino Superior Incompleto</option>
+                <option>Ensino Superior Completo</option>
+            </select>
+        </div>
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte-me um pouco sobre você:</strong></label>
+            <texterea rows="6" style="width: 26em" id="experiencia" name="experiencia"></texterea>
+        </div>
+        <br>
+        <button class="botao" type="submit" onsubmit="">Enviar</button>
     </form>
     
 </body>
